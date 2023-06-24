@@ -36,9 +36,23 @@
             </div>
             <div class="flex-item-right">
                 <form action="">
-                    <input type="text" id="fname" placeholder="Your Name">
-                    <input type="text" name="subject" id="subject" placeholder="Subject">
-                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                    <input type="text" id="fname" placeholder="Your Name" required>
+                    <input type="text" name="subject" id="subject" placeholder="Phone Number" required>
+                    <input type="text" name="Address" id="subject" placeholder="Address" required>
+                    <label for="meeting-time">Choose a time for your appointment:</label>
+                    <input type="datetime-local" id="meeting-time"name="meeting-time" value="" required>
+                    <br>
+                    <br>
+                    <label for="service">Choose a service:</label>
+                    <select name="cars" id="cars">
+                      <option value="DRY HAIRCUT">DRY HAIRCUT</option>
+                      <option value="HAIRCUT BEARD TRIM">HAIRCUT BEARD TRIM</option>
+                      <option value="SENIOR HAIRCUT">SENIOR HAIRCUT</option>
+                      <option value="BEARD TRIM">BEARD TRIM</option>
+                      <option value="STUDENTS">STUDENTS HAIRCUT</option>
+                      <option value="BOYS HAIRCUT">BOYS HAIRCUT(U16)</option>
+                    </select>
+                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="Any further information?"></textarea>
                     <button type="button">Send Message</button>
                 </form>
             </div>
